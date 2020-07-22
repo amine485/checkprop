@@ -1,28 +1,14 @@
-import React from 'react';
-import './App.css';
-
-import ProductTable from  './components/ProductTable'
-
-const products = [
-  { Name
-    :"samsung s20",Price:"749£",Category:"Electronics"},
-  { Name
-    :"Gucci sweatshirt",Price:"1.250£",Category:"Clothes"},
-  { Name
-    :"Iphone XS Max",Price:"769£",Category:"Electronics"},
-  { Name
-    :"Jordan Brand",Price:"34.99£",Category:"Clothes"},
-   
-];
-
-
+import React from "react";
+import Profile from "./profile/Profile"
+const prof = [{ Bio: `I'm an active student in GMC`, Profession: 'Web developer' }]
 
 function App() {
-  return (
-    <div class="body" >
-      <ProductTable x={products} />
-    </div>
-  );
- 
+    return ( 
+    <div className = "App" >
+        <Profile x = { prof } > < img style ={ {  width: '500px', height: '500px' }} src = "./images/avatar.jpg"alt = "avatar" /> </Profile >
+        </div>
+
+    );
 }
+
 export default App;
